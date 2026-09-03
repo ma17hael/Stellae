@@ -17,6 +17,8 @@ importers:
 
   PACKAGES/CONTRACTS: {}
 
+  PACKAGES/LOGGING: {}
+
 packages:
 
   '@types/node@26.4.1':
