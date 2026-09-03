@@ -1,11 +1,9 @@
 # Dependencies
 node_modules/
 
-# Builds
+# Build
 dist/
 build/
-
-# Tests
 coverage/
 
 # Environment
@@ -17,7 +15,7 @@ coverage/
 *.log
 logs/
 
-# IDE
+# Editors
 .vscode/
 .idea/
 
@@ -25,5 +23,12 @@ logs/
 .DS_Store
 Thumbs.db
 
+# TypeScript
+*.tsbuildinfo
+
 # pnpm
-.pnpm-store/
+.pnpm-debug.log*
+
+# Temporary
+tmp/
+temp/

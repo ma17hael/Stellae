@@ -1,24 +1,21 @@
 {
-  "name": "Stellae",
+  "name": "stellae",
+  "version": "2.0.0",
   "private": true,
+  "description": "Stellae Discord Ecosystem",
   "scripts": {
-    "build": "pnpm -r build",
-    "dev": "pnpm -r --parallel dev",
-    "test": "pnpm -r test",
-    "lint": "pnpm -r lint",
-    "typecheck": "pnpm -r typecheck"
+    "build": "pnpm -r --if-present build",
+    "typecheck": "pnpm -r --if-present typecheck",
+    "test": "pnpm -r --if-present test",
+    "lint": "pnpm -r --if-present lint",
+    "clean": "pnpm -r --if-present clean"
   },
-  "devEngines": {
-    "packageManager": {
-      "name": "pnpm",
-      "version": "^11.22.0",
-      "onFail": "download"
-    }
+  "engines": {
+    "node": ">=22"
   },
-  "type": "module",
+  "packageManager": "pnpm@11.22.0",
   "devDependencies": {
-    "@types/node": "^26.2.0",
-    "tsx": "^4.23.12",
+    "@types/node": "^26.4.1",
     "typescript": "^7.0.2"
   }
 }
